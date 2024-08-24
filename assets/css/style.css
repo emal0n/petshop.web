@@ -202,14 +202,13 @@ h1,h2,h3,h4,h5,h6{
 
 
 #form form{
-  z-index: 20;
-  bottom: 0; 
   border: none;
   cursor: pointer;
-  position: absolute;
+  position: static;
   z-index: 30;
-  left: calc(31% + 54px);
+  left: calc(48% + 54px);
   bottom: 0;
+  padding-top: 200px;
 }
 
 #form input{
