@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6{
 
 #intro {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background: linear-gradient(45deg, #0156a5, #c5c5c5);
   background-size: cover;
   position: relative;
@@ -112,20 +112,6 @@ h1,h2,h3,h4,h5,h6{
   font-size: 24px;
 }
 
-#intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
 #intro .product-screens {
   position: absolute;
   left: 0;
@@ -134,7 +120,7 @@ h1,h2,h3,h4,h5,h6{
   overflow: hidden;
   text-align: center;
   width: 100%;
-  height: 60%;
+  height: 100%;
 }
 
 #intro .product-screens img {
@@ -147,7 +133,7 @@ h1,h2,h3,h4,h5,h6{
   z-index: 30;
   left: calc(60% + 54px);
   bottom: 0;
-  top: 40px;
+ 
 }
 
 #intro .product-screens .product-screen-2 {
@@ -155,7 +141,7 @@ h1,h2,h3,h4,h5,h6{
   z-index: 20;
   left: calc(17% - 154px);
   bottom: 0;
-  top: 90px;
+ 
 }
 
 #intro .product-screens .product-screen-3 {
@@ -245,7 +231,6 @@ h1,h2,h3,h4,h5,h6{
   font-weight: bolder;
 }
 
-
 #servicos {
   width: 100%;
   height: 100vh;
@@ -284,20 +269,6 @@ h1,h2,h3,h4,h5,h6{
   margin-bottom: 20px;
   padding: 0 15px;
   font-size: 24px;
-}
-
-#servicos .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
 }
 
 #servicos .product-screens {
@@ -345,7 +316,7 @@ h1,h2,h3,h4,h5,h6{
   z-index: 10;
   left: calc(103% - 374px);
   bottom: 0;
-  top: 38px;
+  top: 20px;
 }
 
 
@@ -856,12 +827,25 @@ h1,h2,h3,h4,h5,h6{
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	justify-content: center;
 	justify-items: center;
-	padding: 50px;
+	padding: 10px;
 }
 
 .c-card {
   width: 250px;
   height: 535px;
+  background: white;
+	border-bottom-left-radius: 17px;
+	border-bottom-right-radius: 17px;
+  border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
+	display: flex;
+	flex-direction: column;
+	transition: 0.6s all ease;
+}
+
+.a-card {
+  width: 250px;
+  height: 400px;
   background: white;
 	border-bottom-left-radius: 17px;
 	border-bottom-right-radius: 17px;
