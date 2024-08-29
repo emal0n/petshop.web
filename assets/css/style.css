@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6{
 
 #intro {
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   background: linear-gradient(45deg, #0156a5, #c5c5c5);
   background-size: cover;
   position: relative;
@@ -120,7 +120,7 @@ h1,h2,h3,h4,h5,h6{
   overflow: hidden;
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 60%;
 }
 
 #intro .product-screens img {
@@ -131,25 +131,33 @@ h1,h2,h3,h4,h5,h6{
 #intro .product-screens .product-screen-1 {
   position: absolute;
   z-index: 30;
-  left: calc(60% + 54px);
+  left: calc(50% + 54px);
   bottom: 0;
- 
+  top: 20px;
 }
 
 #intro .product-screens .product-screen-2 {
-  position: absolute;
+  position: static;
   z-index: 20;
-  left: calc(17% - 154px);
+  left: calc(25% - 154px);
   bottom: 0;
- 
+  top: 20px;
 }
 
 #intro .product-screens .product-screen-3 {
   position: absolute;
   z-index: 10;
-  left: calc(50% - 374px);
+  left: calc(30% - 374px);
   bottom: 0;
-  top: 150px;
+  top: 20px;
+}
+
+#intro .product-screens .product-screen-4 {
+  position: absolute;
+  z-index: 10;
+  right: calc(30% - 374px);
+  bottom: 0;
+  top: 20px;
 }
 
 
@@ -298,7 +306,7 @@ h1,h2,h3,h4,h5,h6{
 #servicos .product-screens .product-screen-2 {
   position: absolute;
   z-index: 20;
-  left: calc(37% - 154px);
+  left: calc(38% - 154px);
   bottom: 0;
   top: 20px;
 }
@@ -314,7 +322,7 @@ h1,h2,h3,h4,h5,h6{
 #servicos .product-screens .product-screen-4 {
   position: absolute;
   z-index: 10;
-  left: calc(103% - 374px);
+  right: calc(30% - 374px);
   bottom: 0;
   top: 20px;
 }
@@ -576,7 +584,7 @@ h1,h2,h3,h4,h5,h6{
 
 #sobre {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 0;
+  padding: 200px 0;
   overflow: hidden;
 }
 
@@ -703,6 +711,17 @@ h1,h2,h3,h4,h5,h6{
 
   .nav-menu a{
     font-size: 8px;
+  }
+}
+
+@media (min-width: 767px) {
+  #intro .product-screens .product-screen-2 {
+    position: static;
+    padding-top: 30px;
+  }
+
+  #intro .product-screens .product-screen-1{
+    display: none;
   }
 }
 
