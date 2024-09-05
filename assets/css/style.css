@@ -155,7 +155,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #intro .product-screens img {
-  box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
   border-radius: 15px
 }
 
@@ -615,7 +614,7 @@ h1,h2,h3,h4,h5,h6{
 
 #sobre {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 200px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
