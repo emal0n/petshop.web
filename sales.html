@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>PetShop PetCenter: o melhor para o seu pet você encontra aqui</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="assets/raw/icons/iconp.png" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <center>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <h1>
+            <a href="index.html"><img src="assets/raw/icons/logo.png"/></a>
+          </h1>
+        </div>
+        <div id="car">
+          <h1>
+            <a href=""><img src="assets/raw/icons/car.png"/></a>
+          </h1>
+        </div>            
+      </div>
+    </header>
+      <main>
+    <div class="container-tabela">
+        <div class="carrinho">
+            <ul id="cart">
+
+            </ul>
+        </div>
+    </div>
+
+        <div class="container-pedido">
+            <div class="pedido">
+                <p id="resumo">Resumo do pedido</p>
+            </div>
+
+            <article>
+                <div class="content-pedido">
+                    <div class="content-subtotal">
+                        <p>Subtotal</p>
+                        <p id="sub-total-preco">R$0,00</p>
+                    </div>
+                    <div class="content-entrega">
+                        <p>Entrega</p>
+                        <p id="valor-entrega">R$0,00</p>
+                    </div>
+                    <div id="cupom"></div>
+                    <div class="content-pre-total">
+                        <p>Total</p>
+                        <p id="total-preco">R$0,00</p>
+                    </div>
+                    <div class="content-desconto">
+                        <div class="box-des">
+                            <p id="pric">R$0,00</p>
+                            <p id="price-descont">R$0,00</p>
+                        </div>
+                        <p id="pix"><i>Valor com 10% de desconto no boleto ou PIX</i></p>
+                    </div>
+                    <div class="content-comprar">
+                        <a href="index.html"><button>Adicionar mais produtos</button></a>
+                        <button id="fechar-ped">Fechar pedido</button>
+                    </div>
+
+            <div class="container-formas-pag">
+                    <h2>Formas de Pagamento</h2>
+            <div class="formas-pag">
+                <div class="content-pag">
+                    <img id="pag-1" src="assets/raw/icons/pag-1.webp" alt="pag-1">
+                    <img id="pag-2" src="assets/raw/icons/pag-2.webp" alt="pag-2">
+                    <img id="pag-3" src="assets/raw/icons/pag-3.webp" alt="pag-3">
+                    <img id="pag-4" src="assets/raw/icons/pag-4.webp" alt="pag-4">
+                    <img id="pag-5" src="assets/raw/icons/pag-5.webp" alt="pag-5">
+                </div>
+                <div class="content-pag2">
+                    <img id="pag-6" src="assets/raw/icons/pag-6.webp" alt="pag-6">
+                    <img id="pag-7" src="assets/raw/icons/pag-7.webp" alt="pag-7">
+                    <img id="pag-8" src="assets/raw/icons/pag-8.webp" alt="pag-8">
+                    <img id="pag-9" src="assets/raw/icons/pag-9.webp" alt="pag-9">
+                    <img id="pag-10"src="assets/raw/icons/pag-10.webp" alt="pag-10">
+                </div>
+            </div>
+            </div>
+
+            <div class="container-cep">
+                    <h1 id="name-consulta">Entrega</h1>
+                    <div class="content-cep">
+                        <div class="pesquisa">
+                            <input type="text" id="cep" placeholder="Digite seu CEP">
+                            <label class="form-pesquisa" for="cep"></label>
+                        </div>
+                        <button onclick="buscarEndereco()">Calcular</button>
+                    </div>
+                    <div class="frete">
+                            <div id="endereco"></div>
+                            <div class="content-frete">
+                                <div id="economico"></div>
+                                <div id="expresso"></div>
+                            </div>
+                    </div>
+            </div>
+
+            <div class="cupom-container">
+                <h1 id="name-consulta">Insira seu cupom</h1>
+                <div class="content-cep">
+                    <input type="text" id="cupom-input">
+                    <button onclick="aplicarCupom()">Aplicar</button>
+                </div>
+                <div id="cupom-message"></div>
+                <div id="cupom-message2"></div>
+            </div>     
+
+            </div>
+        </article>
+        
+        </div>
+
+        <div class="container-carrinho-vazio">
+          <div class="carrinho-vazio">
+              <img id="cart-imagem" src="assets/raw/icons/iconp.png" alt="cartpng">
+              <p id="cart-name-vazio">Seu carrinho está vazio</p>
+              Aproveite para adicionar produtos!
+              <a href="index.html"><button id="cart-explorando">Continue explorando</button></a>
+          </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="section-bg">
+      <div class="container">
+        <div class="row">
+            <div class="copyright">
+              &copy; 2024 <strong><a class="footer-links"href="https://github.com/emal0n">emal0npetcenter</a></strong>. All Rights reserved
+            </div>
+          </div>
+            <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+              <a href="">Politicas de privacidade</a> 
+              <a href="">Termos de uso</a> <br>
+              <a href="index.html">Inicio</a>
+              <a href="about.html">Sobre a PetCenter</a>
+              <a href="feedback.html">Feedback</a>
+              <a href="blog.html">Blog</a> <br>
+            <a href="https://www.google.com"> <img src="assets/raw/icons/google.png" width="10"></a>
+            <a href="https://www.google.com"> <img src="assets/raw/icons/instagram.png" width="10"></a>
+            <a href="https://www.google.com"> <img src="assets/raw/icons/telephone-call.png" width="10"></a>
+            </div>
+          </div>
+           </nav>
+
+      </div>
+    </div>
+  </div>
+</center>
+</footer>
+    <script src="assets/js/carrinho.js"></script>
+
+</body></html>
