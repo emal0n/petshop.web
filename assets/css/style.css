@@ -773,9 +773,8 @@ h1,h2,h3,h4,h5,h6{
 	#servicos .product-screens .product-screen-3 {
 	  position: absolute;
 	  padding-top: 170px;
-	  left: calc(1% - 154px);
+	  left: calc(5% - 154px);
 	  bottom: 0;
-	  top: 20px;
 	}
 
 	#servicos .product-screens .product-screen-4 {
@@ -783,7 +782,6 @@ h1,h2,h3,h4,h5,h6{
 	  padding-top: 40px;
 	  left: calc(85% - 154px);
 	  bottom: 0;
-	  top: 20px;
 	}
 }
 
