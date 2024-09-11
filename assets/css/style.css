@@ -325,7 +325,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #servicos .product-screens img {
-  box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
   border-radius: 15px
 }
 
@@ -741,10 +740,63 @@ h1,h2,h3,h4,h5,h6{
   color:  #0156a5;
 }
 
-@media (min-width: 1025px) {
-  #intro {
-    background-attachment: fixed;
-  }
+@media (max-width: 1020px) {
+	  #intro .product-screens .product-screen-3,
+	  #intro .product-screens .product-screen-4 {
+		display: none;
+	  }
+
+	  #servicos .product-screens .product-screen-3,
+	  #servicos .product-screens .product-screen-4 {
+		display: none;
+	  }
+}
+
+@media (max-width: 1920px) {
+	#intro .product-screens .product-screen-2 {
+	  position: absolute;
+	  padding-top: 30px;
+	}
+  
+	#intro .product-screens .product-screen-3 {
+	  position: absolute;
+	  padding-top: 30px;
+	  left: calc(9% - 154px);
+	  bottom: 0;
+	  top: 20px;
+	}
+
+	#intro .product-screens .product-screen-4 {
+	  position: absolute;
+	  padding-top: 30px;
+	  left: calc(80% - 154px);
+	  bottom: 0;
+	  top: 20px;
+	}
+
+	#servicos .product-screens .product-screen {
+	  position: static;
+	}
+
+	#servicos .product-screens .product-screen-2 {
+	  position: absolute;
+	}
+  
+	#servicos .product-screens .product-screen-3 {
+	  position: absolute;
+	  padding-top: 170px;
+	  left: calc(1% - 154px);
+	  bottom: 0;
+	  top: 20px;
+	}
+
+	#servicos .product-screens .product-screen-4 {
+	  position: absolute;
+	  padding-top: 40px;
+	  left: calc(85% - 154px);
+	  bottom: 0;
+	  top: 20px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -802,7 +854,8 @@ h1,h2,h3,h4,h5,h6{
   }
 
   #intro .product-screens .product-screen-2,
-  #intro .product-screens .product-screen-3 {
+  #intro .product-screens .product-screen-3,
+  #intro .product-screens .product-screen-4 {
     display: none;
   }
   #servicos .product-screens .product-screen-2,
