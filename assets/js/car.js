@@ -115,21 +115,19 @@ var url = `https://viacep.com.br/ws/${cep}/json/`;
                 }else{
                     var endereco = `<div id="end">${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}</div>`;
                     document.getElementById('endereco').innerHTML = endereco;
-                    var economico = `<div id="eco"><strong>ECONÔMICO</strong> | R$30,28 <br>
-                                        <span class="cor-frete"><strong>Médio: 7 dias úteis*</strong></span><br>
-                                        Máximo: 16 dias úteis*</div>`;
+                    var economico = `<div id="eco"><strong>CORREIOS</strong> <br>
+                                        <span class="cor-frete"><strong>R$20,44</strong></span><br> 10 dias úteis</div>`;
                     document.getElementById('economico').innerHTML = economico;
-                    var expresso = `<div id="eco"><strong>EXPRESSO</strong> | R$60,42 <br>
-                                        <span class="cor-frete"><strong>Médio: 4 dias úteis*</strong></span><br>
-                                        Máximo: 10 dias úteis*</div>`;
+                    var expresso = `<div id="eco"><strong>SEDEX</strong><br>
+                                        <span class="cor-frete"><strong>R$35,50</strong></span><br> 7 dias úteis*</div>`;
                     document.getElementById('expresso').innerHTML = expresso;
                     var valorEntrega = document.getElementById('valor-entrega');
                     if (valorEntrega) {
-                        valorEntrega.innerText = 'R$30,28';
+                        valorEntrega.innerText = 'R$20,44';
                     } if(!calculoRealizado){
                       var total = document.querySelector('.content-pre-total p:last-of-type');
                       var totalValue = parseFloat(total.innerText.replace('R$', '').replace(',', '.'));
-                      var newTotal = totalValue + 30.28;
+                      var newTotal = totalValue + 20.44;
                         total.innerText = 'R$' + newTotal.toFixed(2).replace('.', ',');
                       var desconto = newTotal * 0.1;
                       var totalComDesconto = newTotal - desconto;
@@ -137,7 +135,7 @@ var url = `https://viacep.com.br/ws/${cep}/json/`;
 
                       var pricElement = document.getElementById('pric');
                       var pricValue = parseFloat(pricElement.innerText.replace('R$', '').replace(',', '.'));
-                      var newPricValue = pricValue + 30.28;
+                      var newPricValue = pricValue + 20.44;
                         pricElement.innerText = 'R$' + newPricValue.toFixed(2).replace('.', ',');
                         calculoRealizado = true;
                     }

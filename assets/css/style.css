@@ -557,7 +557,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #sobre {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 50px 0;
   overflow: hidden;
 }
@@ -819,13 +818,14 @@ h1,h2,h3,h4,h5,h6{
 ul{
 	display: flex;
 	flex-direction: column;
-	margin-right: 25px;
+	margin-right: 20px;
 	justify-content: center;
 }
 
-#product{
+#product {
 	display: flex;
 	margin-top: 50px;
+	margin-bottom: 20px;
 	border-radius: 10px;
 	background-color: white;
 }
@@ -839,7 +839,6 @@ ul{
 
 #itemImg{
 	width: 120px;
-	margin-left: 10px;
 }
 
 #itemName{
@@ -863,14 +862,14 @@ ul{
 }
 
 .button-group {
-	width: 400px;
+	width: 300px;
 }
 
 #itemQnt{
 	font-size: 17px;
 	padding-top: 1px;
-	width: 30px;
-	height: 35px;
+	width: 15px;
+	height: 25px;
 	text-align: center;
 	border: #777;;
 	border-left: none;
@@ -883,8 +882,8 @@ ul{
 #increaseBtn {
 	font-size: 15px;
 	padding-top: 1px;
-	width: 25px;
-	height: 35px;
+	width: 15px;
+	height: 25px;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border: #777;;
@@ -896,8 +895,8 @@ ul{
 #decreaseBtn {
 	font-size: 17px;
 	padding-top: 1px;
-	width: 25px;
-	height: 35px;
+	width: 15px;
+	height: 25px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border:#777;;
@@ -964,20 +963,15 @@ ul{
 #endereco {
 	margin: 3px;
 	font-size: 15px;
+	background-color:#0156a5;
+	color: white;
+	border-radius: 5px;
 }
 
 .container-tabela {
 	display: block;
     margin-top: 80px;
 	margin-left: 40px;
-}
-
-.tabela {
-    display: flex;
-}
-
-.tabela p {
-    font-size: 18px;
 }
 
 .container-content {
@@ -990,105 +984,6 @@ ul{
     border-radius: 10px;
 }
 
-.content-prod {
-    display: flex;
-    justify-content: start;
-    width: 400px;
-}
-
-.content-prod img {
-    width: 40%;
-    margin-bottom: 10px;
-}
-
-.content-prod p {
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-.content-pre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-	font-size: 20px;
-}
-
-.container-quad {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	gap: 5px;
-}
-
-.container-quad p:hover {
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-.content-quan {
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 25px;
-    width: 240px;
-}
-
-.content-quan input {
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-	border-left: none;
-	border-right: none;
-}
-
-.content-quan #quantity1, #quantity2, #quantity3, #quantity4, #quantity5 {
-    font-size: 20px;
-    text-align: center;
-}
-
-input[type="number"]:focus {
-    outline: none;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-#btn-min1, #btn-max1, #btn-min2, #btn-max2, #btn-min3, #btn-max3, #btn-min4, #btn-max4, #btn-min5, #btn-max5 {
-	width: 30px;
-	height: 40px;
-	font-size: 20px;
-    padding: 5px 10px;
-    background-color: #ffffff;
-	border: 1px solid black;
-    cursor: pointer;
-    line-height: 1;
-    text-align: center;
-}
-
-#btn-min1:hover, #btn-max1:hover, #btn-min2:hover, #btn-max2:hover, #btn-min3:hover, #btn-max3:hover, #btn-min4:hover, #btn-max4:hover, #btn-min5:hover, #btn-max5:hover {
-	background-color: #e4e4e4;
-}
-
-#btn-min1, #btn-min2, #btn-min3, #btn-min4, #btn-min5 {
-	padding-bottom: 8px;
-	border-right: none;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-#btn-max1, #btn-max2, #btn-max3, #btn-max4, #btn-max5 {
-	border-left: none;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
-
 .content-total {
     display: flex;
     justify-content: center;
@@ -1098,7 +993,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .container-pedido {
-    margin-top: 80px;
+    margin-top: 30px;
 	margin-left: 20px;
 	margin-right: 40px;
 	width: 500px;
@@ -1306,7 +1201,6 @@ input[type="text"]:focus {
 	margin-top: 10px;
 	font-size: 12px;
 	border-radius: 10px;
-	border: 1px solid black;
 }
 
 #economico, #expresso {
@@ -1318,9 +1212,8 @@ input[type="text"]:focus {
 #eco {
 	width: 244px;
 	height: 100px;
-	padding: 20px 25px 20px;
 	border-radius: 10px;
-	border: 1px solid black;
+	background-color: white;
 	cursor: pointer;
 	transition: 0.4s all ease;
 }
@@ -1445,12 +1338,14 @@ input[type="text"]:focus {
 	padding: 2px;
 	font-size: 15px;
 	color: rgb(55, 55, 228);
+	margin-top: 10px;
 }
 
 #cupom-message2 {
 	padding: 2px;
 	font-size: 15px;
 	color: black;
+	margin-top: 10px;
 }
 
 .cupom-container {
@@ -1460,7 +1355,7 @@ input[type="text"]:focus {
 
 .cupom-container h1 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .content-cep {
@@ -1479,6 +1374,7 @@ input[type="text"]:focus {
     padding: 5px;
 	border: none;
     border-radius: 5px;
+	margin-top: 10px;
 }
 
 .content-cep button {
@@ -2162,6 +2058,7 @@ input[type="text"]:focus {
 	  #servicos .product-screens .product-screen-4 {
 		display: none;
 	  }
+
 }
 
 @media (max-width: 768px) {
@@ -2232,5 +2129,29 @@ input[type="text"]:focus {
   #form form{
     position: static;
     padding-top: 300px;
+  }
+
+  .produto {
+	padding: 15px;
+  	width: 90%;
+  }
+
+  ul {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: center;
+  }
+
+  .product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  }
+
+ .button-group {
+  margin-top: 15px;
+  width: 400px;
   }
 }
