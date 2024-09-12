@@ -8,7 +8,7 @@ function displayCart(){
   cartList.innerHTML = '';
 
   if (cart && cart.length > 0){
-  cart.forEach((item, index) => {
+  cart.forEach((item, index) =>{
     const cartItem = document.createElement('li');
       cartItem.setAttribute('id', 'product');
     const productInfo = document.createElement('div');
@@ -32,13 +32,13 @@ function displayCart(){
     const increaseButton = document.createElement('button');
       increaseButton.setAttribute('id', 'increaseBtn');
       increaseButton.textContent = '+';
-      increaseButton.addEventListener('click', () => {
+      increaseButton.addEventListener('click', () =>{
         increaseQuantity(itemQuantity);
       });
     const decreaseButton = document.createElement('button');
       decreaseButton.setAttribute('id', 'decreaseBtn');
       decreaseButton.textContent = '-';
-      decreaseButton.addEventListener('click', () => {
+      decreaseButton.addEventListener('click', () =>{
         decreaseQuantity(itemQuantity);
       });
     const itemPrice = document.createElement('p');
@@ -48,7 +48,7 @@ function displayCart(){
       removeText.classList.add('remove-text');
       removeText.textContent = 'Remover';
       removeText.style.cursor = 'pointer';
-      removeText.addEventListener('click', () => {
+      removeText.addEventListener('click', () =>{
         removeItem(index);
       });
     const buttonGroup = document.createElement('div');
@@ -76,40 +76,41 @@ function displayCart(){
   }
 }
 
-function increaseQuantity(itemQuantity) {
+function increaseQuantity(itemQuantity){
   itemQuantity.value = parseInt(itemQuantity.value) + 1;
 }
 
-function decreaseQuantity(itemQuantity) {
-  if (parseInt(itemQuantity.value) > 1) {
+function decreaseQuantity(itemQuantity){
+  if (parseInt(itemQuantity.value) > 1){
     itemQuantity.value = parseInt(itemQuantity.value) - 1;
   }
 }
-function removeItem(index) {
+
+function removeItem(index){
   let cart = JSON.parse(localStorage.getItem('cart'));
   cart.splice(index, 1);
   localStorage.setItem('cart', JSON.stringify(cart));
   displayCart();
 }
 
-function addToCart(item) {
+function addToCart(item){
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   cart.push(item);
   localStorage.setItem('cart', JSON.stringify(cart));
   displayCart();
 }
+
 window.onload = displayCart;
 
 var calculoRealizado = false;
 
-function buscarEndereco() {
+function buscarEndereco(){
 var cep = document.getElementById('cep').value;
 var url = `https://viacep.com.br/ws/${cep}/json/`;
-
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                if (data.erro) {
+                if (data.erro){
                     document.getElementById('endereco').innerText = "CEP não encontrado.";
                 }else{
                     var endereco = `<div id="end">${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}</div>`;
@@ -125,7 +126,7 @@ var url = `https://viacep.com.br/ws/${cep}/json/`;
                     var valorEntrega = document.getElementById('valor-entrega');
                     if (valorEntrega) {
                         valorEntrega.innerText = 'R$30,28';
-                    } if (!calculoRealizado){
+                    } if(!calculoRealizado){
                       var total = document.querySelector('.content-pre-total p:last-of-type');
                       var totalValue = parseFloat(total.innerText.replace('R$', '').replace(',', '.'));
                       var newTotal = totalValue + 30.28;
@@ -143,7 +144,8 @@ var url = `https://viacep.com.br/ws/${cep}/json/`;
                 }
             })
             .catch(error => console.error('Erro:', error));
-    }
+}
+
   var cupomAplicado = false;
         function aplicarCupom(){
             if (cupomAplicado) {
@@ -182,4 +184,4 @@ var url = `https://viacep.com.br/ws/${cep}/json/`;
                 cupomMessageInvalido.innerText = 'Cupom inválido!';
                 return;
             }
-        }
+}
