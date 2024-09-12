@@ -46,7 +46,7 @@ function displayCart(){
       itemPrice.textContent = item.price;
     const removeText = document.createElement('p');
       removeText.classList.add('remove-text');
-      removeText.textContent = 'Remover';
+      removeText.textContent = 'Retirar do carrinho';
       removeText.style.cursor = 'pointer';
       removeText.addEventListener('click', () =>{
         removeItem(index);

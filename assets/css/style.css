@@ -819,6 +819,7 @@ h1,h2,h3,h4,h5,h6{
 
 ul{
 	display: flex;
+	flex-direction: column;
 	margin-right: 25px;
 	justify-content: center;
 }
@@ -863,7 +864,7 @@ ul{
 }
 
 .button-group {
-	width: 150px;
+	width: 400px;
 }
 
 #itemQnt{
@@ -908,7 +909,7 @@ ul{
 }
 
 .remove-text{
-	font-size: 15px;
+	font-size: 10px;
 	margin-left: 40px;
 	margin-top: 20px;
 	color: #777;;
