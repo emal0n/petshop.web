@@ -805,7 +805,6 @@ h1,h2,h3,h4,h5,h6{
 
 .button-comprar:hover {
   	background:#0156a5;
-	transform: scale3d(1.05, 1.2, 1);
 	border: none;
 	cursor: pointer;
   	border-bottom-left-radius: 14px;
@@ -953,9 +952,13 @@ ul{
 	border-radius: 10px;
 	color: white;
 	background-color:#0156a5;
-	border: 1px solid black;
 	cursor: pointer;
-	margin-bottom: 100px;
+	margin-bottom: 250px;
+	transition: 0.4s all ease;
+}
+
+#cart-explorando:hover {
+	transform: scale3d(1.05, 1.2, 1);
 }
 
 #endereco {
@@ -1240,11 +1243,11 @@ input[type="number"]::-webkit-outer-spin-button {
 	background-color: #0156a5;
 	color: white;
 	border: none;
+	transition: 0.4s all ease;
 }
 
 .content-comprar button:hover {
 	cursor: pointer;
-	transition: 0.4s all ease;
 	transform: scale(1.04);
 }
 
@@ -1253,11 +1256,11 @@ input[type="number"]::-webkit-outer-spin-button {
 	background-color: #0156a5;
 	color: white;
 	border: none;
+	transition: 0.4s all ease;
 }
 
 .content-comprar #fechar-ped:hover {
 	cursor: pointer;
-	transition: 0.4s all ease;
 	transform: scale(1.04);
 }
 
