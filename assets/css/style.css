@@ -749,7 +749,7 @@ h1,h2,h3,h4,h5,h6{
 	height: 25px;
 	font-size: 17px;
 	color: rgb(255, 0, 0);
-  margin-top: 25px;
+  	margin-top: 25px;
 }
 
 .content-price {
@@ -770,7 +770,7 @@ h1,h2,h3,h4,h5,h6{
 
 .price-discount {
 	text-decoration: line-through;
-  color: #999;
+  	color: #999;
 	margin-top: 24px;
 	font-size: 16px;
 }
@@ -799,55 +799,60 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 20px;
 	border: none;
 	transition: 0.4s all ease;
-  border-bottom-left-radius: 14px;
+  	border-bottom-left-radius: 14px;
 	border-bottom-right-radius: 14px;
 }
 
 .button-comprar:hover {
-  background:#0156a5;
+  	background:#0156a5;
 	transform: scale3d(1.05, 1.2, 1);
 	border: none;
 	cursor: pointer;
-  border-bottom-left-radius: 14px;
+  	border-bottom-left-radius: 14px;
 	border-bottom-right-radius: 14px;
 }
 
 .produto{
-  padding: 15px;
+  	padding: 15px;
 	width: 90%;
 }
 
-
 ul{
 	display: flex;
-	flex-direction: column;
+	margin-right: 25px;
 	justify-content: center;
 }
+
 #product{
 	display: flex;
-	border-bottom: 1px solid black;
-	margin-top: 15px;
+	margin-top: 50px;
 	border-radius: 10px;
+	background-color: white;
 }
+
 .product-info {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 500px;
+	width: 200px;
 }
+
 #itemImg{
-	width: 150px;
+	width: 120px;
 	margin-left: 10px;
 }
+
 #itemName{
-	width: 30%;
+	width: 10%;
 	text-align: justify;
-	margin-right: 50px;
-	font-size: 15px;
+	margin-right: 100px;
+	margin-top: 25px;
+	font-size: 10px;
 }
 
 #itemPrice {
-	font-size: 17px;
+	margin-top: 30px;
+	font-size: 15px;
 }
 
 .product-price {
@@ -860,17 +865,21 @@ ul{
 .button-group {
 	width: 150px;
 }
+
 #itemQnt{
 	font-size: 17px;
 	padding-top: 1px;
 	width: 30px;
 	height: 35px;
 	text-align: center;
-	border: 1px solid black;
+	border: #777;;
 	border-left: none;
 	border-right: none;
 	margin-top: 55px;
+	background-color: #0156a5;
+	color: white;
 }
+
 #increaseBtn {
 	font-size: 15px;
 	padding-top: 1px;
@@ -878,10 +887,12 @@ ul{
 	height: 35px;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-	border: 1px solid black;
+	border: #777;;
 	border-left: none;
 	cursor: pointer;
+	color:#777;
 }
+
 #decreaseBtn {
 	font-size: 17px;
 	padding-top: 1px;
@@ -889,18 +900,21 @@ ul{
 	height: 35px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	border: 1px solid black;
+	border:#777;;
 	border-right: none;
 	margin-left: 35px;
 	cursor: pointer;
+	color:#777;
 }
+
 .remove-text{
 	font-size: 15px;
-	margin-left: 45px;
-	margin-top: 3px;
-	color: black;
+	margin-left: 40px;
+	margin-top: 20px;
+	color: #777;;
 	cursor: pointer;
 }
+
 .remove-text:hover{
 	text-decoration: underline;
 }
@@ -960,41 +974,6 @@ ul{
 
 .tabela p {
     font-size: 18px;
-}
-
-#prod, #pre, #quan, #total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    border: 1px solid black;
-}
-
-#prod {
-    width: 500px;
-    border-right: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-	border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#pre {
-    width: 150px;
-    border-right: none;
-
-}
-
-#quan {
-    width: 150px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#total {
-    width: 200px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .container-content {
@@ -1119,7 +1098,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	margin-left: 20px;
 	margin-right: 40px;
 	width: 500px;
-	height: 1000px;
+	height: 900px;
 }
 
 .pedido {
@@ -1128,14 +1107,17 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     width: 500px;
     height: 70px;
-    border: 1px solid black;
+	background-color: #0156a5;
+    border: 1px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: none;
 }
 
-.pedido p {
-    font-size: 24px;
+.pedido #resumo{
+	font-size: medium;
+	padding-top: 35px;
+	color: white;
 }
 
 .content-pedido {
@@ -1144,17 +1126,20 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .content-subtotal {
+	padding-top: 35px;
     width: 500px;
     height: 50px;
 	background-color: transparent;
-    border: 1px solid black;
+    border: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+	background-color: white;
 }
 
 .content-subtotal p {
-    font-size: 18px;
+    font-size: medium;
+	color: black;
 	margin-left: 15px;
 	padding-right: 10px;
 }
@@ -1162,15 +1147,18 @@ input[type="number"]::-webkit-outer-spin-button {
 .content-entrega {
     width: 500px;
     height: 50px;
-    border: 1px solid black;
+    border: white;
 	border-top: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+	background-color: white;
 }
 
 .content-entrega p {
-    font-size: 18px;
+	font-size: medium;
+	padding-top: 20px;
+	color: black;
 	margin-left: 15px;
 	padding-right: 10px;
 }
@@ -1178,32 +1166,35 @@ input[type="number"]::-webkit-outer-spin-button {
 .content-pre-total {
     width: 500px;
     height: 60px;
-	border: 1px solid black;
+	border: white;
 	border-top: none;
 	border-bottom: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+	background-color: white;
 }
 
 .content-pre-total p {
-    font-size: 23px;
+	padding-top: 20px;
+	color: black;
 	margin-left: 15px;
 	padding-right: 10px;
 }
 
 .content-desconto {
-	border: 1px solid black;
+	border: white;
 	border-top: none;
 	border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     gap: 5px;
+	background-color: white;
 }
 
 .content-desconto #price-descont {
     font-size: 23px;
 	margin-right: 20px;
-    color: green;
+    color: black;
 }
 
 .content-desconto #pric {
@@ -1222,11 +1213,6 @@ input[type="number"]::-webkit-outer-spin-button {
 	display: flex;
     align-items: center;
     justify-content: end;
-}
-
-#pix {
-    margin: 10px 24px 10px 0px;
-    color: green;
 }
 
 .content-pedido p {
@@ -1250,24 +1236,28 @@ input[type="number"]::-webkit-outer-spin-button {
 	height: 40px;
 	font-size: 16px;
 	border-radius: 5px;
-	background-color: rgb(236, 236, 236);
-	color: black;
-	border: 1px solid black;
+	background-color: #0156a5;
+	color: white;
+	border: none;
 }
 
 .content-comprar button:hover {
-	background-color: rgb(221, 221, 221);
 	cursor: pointer;
+	transition: 0.4s all ease;
+	transform: scale(1.04);
 }
 
 .content-comprar #fechar-ped {
 	width: 250px;
 	background-color: #0156a5;
 	color: white;
+	border: none;
 }
 
 .content-comprar #fechar-ped:hover {
 	cursor: pointer;
+	transition: 0.4s all ease;
+	transform: scale(1.04);
 }
 
 .container-cep {
@@ -1285,30 +1275,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #cep {
-    width: 150px;
+	width: 293px;
 	height: 40px;
     padding: 5px;
-    border: 2px solid #ccc;
+   	border: none;
     border-radius: 5px;
-}
-
-.content-cep button {
-	width: 80px;
-	height: 39px;
-	font-size: 14px;
-	background-color: #dadada;
-	color: #000000;
-	border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 input[type="text"]:focus {
     outline: none;
-}
-
-button:hover {
-    background-color: #ccc;
 }
 
 .content-frete {
@@ -1353,7 +1328,7 @@ button:hover {
 }
 
 .cor-frete {
-	color: rgb(55, 55, 228);
+	color: #0156a5;
 }
 
 .container-formas-pag {
@@ -1375,7 +1350,6 @@ button:hover {
 	width: 496px;
 	margin-top: 10px;
 	border-radius: 5px;
-	box-shadow: 2px 2px 5px #b8b8b8;
 }
 
 .content-pag, .content-pag2 {
@@ -1416,62 +1390,47 @@ button:hover {
 }
 
 .content-pag img:hover:not(.selected), .content-pag2 img:hover:not(.selected) {
-	border-color: transparent;
+	border-color:#0156a5;
 }
 
 .content-pag img.selected, .content-pag2 img.selected {
-	border-color: rgb(0, 0, 0);
+	border-color:#0156a5;
 }
 
-#pag-1 {
+#pag-52px {
 	width: 52px;
 	padding: 6px 10px 5px 10px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
 
-#pag-2 {
+#pag-46px {
 	width: 46px;
 	padding: 5px 6px 5px 7px;
 }
 
-#pag-3 {
-	width: 46px;
-	padding: 5px 6px 5px 7px;
-}
-
-#pag-4 {
+#pag-54px {
 	width: 54px;
 	padding: 3px 8px 2px 8px;
 }
 
-#pag-5 {
+#pag-49px {
 	width: 49px;
 	padding: 10px 1px 10px 1px;
 }
 
-#pag-6 {
+#pag-46p {
 	margin-left: -3px;
 	width: 46px;
 	padding: 5px 6px 5px 7px;
 }
 
-#pag-7 {
-	width: 46px;
-	padding: 5px 6px 5px 7px;
-}
-
-#pag-8 {
+#pag-51px {
 	width: 51px;
 	padding: 1px 5px 1px 5px;
 }
 
-#pag-9 {
-	width: 51px;
-	padding: 1px 5px 1px 5px;
-}
-
-#pag-10 {
+#pag-55px {
 	width: 55px;
 	padding: 12px 5px 13px 4px;
 	border-top-right-radius: 5px;
@@ -1514,7 +1473,7 @@ button:hover {
     width: 400px;
 	height: 40px;
     padding: 5px;
-    border: 2px solid #ccc;
+	border: none;
     border-radius: 5px;
 }
 
@@ -1522,15 +1481,17 @@ button:hover {
 	width: 80px;
 	height: 39px;
 	font-size: 14px;
-	background-color: #dadada;
-	color: #000000;
+	background-color: #0156a5;;
+	color: white;
 	border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #ccc;
+.container-cep button:hover{
+	cursor: pointer;
+	transition: 0.4s all ease;
+	transform: scale(1.04);
 }
 
 @media (max-width: 1920px) {
