@@ -194,84 +194,6 @@ h1,h2,h3,h4,h5,h6{
   top: 20px;
 }
 
-
-#form {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, #0156a5, #c5c5c5);
-  background-size: cover;
-  position: relative;
-}
-
-#form .form-text {
-  position: absolute;
-  left: 0;
-  top: 60px;
-  right: 0;
-  height: calc(50% - 60px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-#form h2 {
-  margin: 30px 0 10px 0;
-  padding: 0 15px;
-  font-weight: 400;
-  line-height: 56px;
-  color: #fff;
-}
-
-
-#form form{
-  border: none;
-  cursor: pointer;
-  position: static;
-  z-index: 30;
-  left: calc(48% + 54px);
-  bottom: 0;
-  padding-top: 200px;
-}
-
-#form input{
-  width: 200px;
-  height: 40px;
-  background: linear-gradient(45deg, #0156a5, #c5c5c5);
-  position:static;
-  border: none;
-  cursor: pointer;
-}
-
-
-#form button{
-  background: linear-gradient(45deg, #0156a5, #c5c5c5);
-  border: none;
-  width: 200px;
-  height: 40px;
-  color: #fff;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-#form textarea{
-  background: linear-gradient(45deg, #0156a5, #c5c5c5);
-  border: none;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-}
-
-#form ::placeholder{
-  font-size: x-small;
-  color: #fff;
-  font-weight: bolder;
-}
-
 #servicos {
   width: 100%;
   height: 100vh;
@@ -360,100 +282,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .container{
-	display:inline;
-}
-
-#post {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, #0156a5, #c5c5c5);
-  background-size: cover;
-  position: relative;
-}
-
-.nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
-}
-
-.nav-menu li {
-  position: relative;
-  white-space: nowrap;
-}
-
-.nav-menu > li {
-  float: left;
-}
-
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
-  display: block;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
-
-.nav-menu ul li {
-  min-width: 180px;
-}
-
-#nav-menu-container {
-  float: right;
-  margin: 0;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  display: inline-block;
-  color:  #0156a5;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  outline: none;
-}
-
-.nav-menu > li {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.nav-menu ul {
-  margin: 4px 0 0 0;
-  padding: 10px;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
-}
-
-.nav-menu ul li {
-  transition: 0.3s;
-}
-
-.nav-menu ul li a {
-  padding: 10px;
-  color: #333;
-  transition: 0.3s;
-  display: block;
-  font-size: 13px;
-  text-transform: none;
-}
-
-.nav-menu ul li:hover > a {
-  color:  #0156a5;
-}
-
-.nav-menu ul ul {
-  margin: 0;
+	display: inline;
 }
 
 #contact {
@@ -997,7 +826,7 @@ ul{
 	margin-left: 20px;
 	margin-right: 40px;
 	width: 500px;
-	height: 900px;
+	height: 1000px;
 }
 
 .pedido {
@@ -1181,10 +1010,6 @@ ul{
     border-radius: 5px;
 }
 
-input[type="text"]:focus {
-    outline: none;
-}
-
 .content-frete {
 	display: flex;
 	justify-content: center;
@@ -1337,7 +1162,7 @@ input[type="text"]:focus {
 #cupom-message {
 	padding: 2px;
 	font-size: 15px;
-	color: rgb(55, 55, 228);
+	color:#0156a5;
 	margin-top: 10px;
 }
 
@@ -1524,12 +1349,6 @@ input[type="text"]:focus {
 		margin-right: 10px;
 	}
 	
-	#pix {
-		font-size: 15px;
-		margin-top: 5px;
-		margin-right: 20px;
-	}
-	
 	.content-comprar {
 		margin-top: 30px;
 		width: 350px;
@@ -1626,36 +1445,36 @@ input[type="text"]:focus {
 		width: 43px;
 	}
 	
-	#pag-1 {
+	#pag-52px {
 		width: 67px;
 		padding: 3px 10px 4px 10px;
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 0px;
 	}
 	
-	#pag-2 {
+	#pag-46px {
 		width: 63px;
 		padding: 2px 6px 2px 7px;
 	}
 	
-	#pag-3 {
+	#pag-46px {
 		width: 62px;
 		padding: 2px 6px 3px 7px;
 	}
 	
-	#pag-4 {
+	#pag-54px {
 		width: 63px;
 		padding: 3px 8px 4px 8px;
 	}
 	
-	#pag-5 {
+	#pag-49px {
 		width: 93px;
 		padding: 7px 5px 7px 5px;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 0px;	
 	}
 	
-	#pag-6 {
+	#pag-46px {
 		width: 67px;
 		padding: 3px 10px 4px 10px;
 		border-top-left-radius: 0px;
@@ -1663,22 +1482,22 @@ input[type="text"]:focus {
 		margin-left: 0px;
 	}
 	
-	#pag-7 {
+	#pag-46px {
 		width: 63px;
 		padding: 2px 6px 2px 7px;
 	}
 	
-	#pag-8 {
+	#pag-51px {
 		width: 62px;
 		padding: 2px 6px 3px 7px;
 	}
 	
-	#pag-9 {
+	#pag-51px {
 		width: 63px;
 		padding: 3px 8px 4px 8px;
 	}
 	
-	#pag-10 {
+	#pag-55 {
 		width: 93px;
 		padding: 12px 5px 12px 5px;	
 		border-top-right-radius: 0px;
@@ -1816,45 +1635,9 @@ input[type="text"]:focus {
 		border-left: none;
 		border-right: none;
 	}
-	
-	.content-quan #quantity1, #quantity2, #quantity3, #quantity4, #quantity5 {
-		font-size: 17px;
-		border-radius: 0px;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-max1, #btn-min2, #btn-max2, #btn-min3, #btn-max3, #btn-min4, #btn-max4, #btn-min5, #btn-max5 {
-		width: 30px;
-		height: 30px;
-		font-size: 20px;
-		padding: 2px 10px;
-		cursor: pointer;
-		line-height: 1;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-min2, #btn-min3, #btn-min4, #btn-min5 {
-		padding-bottom: 8px;
-		border-right: none;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-	
-	#btn-max1, #btn-max2, #btn-max3, #btn-max4, #btn-max5 {
-		border-left: none;
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
   }
 
 @media (max-width: 1260px) {
-	main {
-		display: block;
-	}
-}
-
-@media (max-width: 1260px) {
-
 	.container-tabela {
 		margin-left: 60px;
 	}
@@ -1942,7 +1725,7 @@ input[type="text"]:focus {
 		border-left: none;
 		border-right: none;
 	}
-  }
+}
 
 @media (max-width: 1120px) {
 	.icon {
@@ -1957,7 +1740,7 @@ input[type="text"]:focus {
 	.icon a {
 		font-size: 20px;
 	}
-  }
+}
 
 @media (max-width: 1140px) {
 	.container-tabela {
@@ -2058,7 +1841,6 @@ input[type="text"]:focus {
 	  #servicos .product-screens .product-screen-4 {
 		display: none;
 	  }
-
 }
 
 @media (max-width: 768px) {
@@ -2124,11 +1906,6 @@ input[type="text"]:focus {
   #servicos .product-screens .product-screen-3,
   #servicos .product-screens .product-screen-4{
     display: none;
-  }
-
-  #form form{
-    position: static;
-    padding-top: 300px;
   }
 
   .produto {
