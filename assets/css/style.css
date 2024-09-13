@@ -823,8 +823,6 @@ ul{
 
 .container-pedido {
     margin-top: 30px;
-	margin-left: 20px;
-	margin-right: 40px;
 	width: 500px;
 	height: 1000px;
 }
@@ -849,9 +847,11 @@ ul{
 }
 
 .content-pedido {
-    width: 500px;
-	height: 800px;
-}
+		width: 350px;
+		height: 240px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
 
 .content-subtotal {
 	padding-top: 35px;
@@ -1268,12 +1268,6 @@ ul{
 	.container-tabela {
 		margin-left: 40px;
 	}
-
-	.container-pedido {
-		width: 350px;
-		margin-right: 40px;
-		margin-left: 40px;
-	}
 	
 	.pedido {
 		width: 350px;
@@ -1284,13 +1278,6 @@ ul{
 	
 	.pedido p {
 		font-size: 24px;
-	}
-	
-	.content-pedido {
-		width: 350px;
-		height: 240px;
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
 	}
 	
 	.content-subtotal {
@@ -1547,290 +1534,6 @@ ul{
 	}
 }
 
-@media (max-width: 1480px) {
-	.container-tabela {
-		margin-left: 60px;
-	}
-
-	.container-pedido {
-		margin-left: 50px;
-	}
-
-	.tabela p {
-		font-size: 18px;
-	}
-
-	.container-content {
-		margin-top: 10px;
-		margin-bottom: 30px;
-		width: 600px;
-		height: 150px;
-		border-radius: 10px;
-	}
-	
-	.content-prod {
-		width: 250px;
-	}
-	
-	.content-prod img {
-		width: 50%;
-		margin-bottom: 10px;
-	}
-	
-	.content-prod p {
-		margin-top: 10px;
-		padding: 10px;
-		font-size: 12px;
-	}
-	
-	.content-pre {
-		font-size: 15px;
-		width: 100px;
-	}
-	
-	.content-quan {
-		width: 150px;
-	}
-	
-	.content-quan input {
-		width: 50px;
-		height: 30px;
-		border-radius: 5px;
-	}
-	
-	.content-quan #quantidade {
-		font-size: 17px;
-	}
-	
-	.content-total {
-		font-size: 15px;
-		width: 100px;
-	}
-
-	.container-quad {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		gap: 5px;
-	}
-	
-	.container-quad p:hover {
-		cursor: pointer;
-		text-decoration: underline;
-	}
-	
-	.content-quan {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 25px;
-		width: 150px;
-	}
-	
-	.content-quan input {
-		width: 20px;
-		height: 30px;
-		border-left: none;
-		border-right: none;
-	}
-  }
-
-@media (max-width: 1260px) {
-	.container-tabela {
-		margin-left: 60px;
-	}
-
-	.container-pedido {
-		margin-left: 50px;
-	}
-
-	.tabela p {
-		font-size: 18px;
-	}
-	
-	.container-content {
-		margin-top: 10px;
-		margin-bottom: 30px;
-		width: 600px;
-		height: 150px;
-		border-radius: 10px;
-	}
-	
-	.content-prod {
-		width: 250px;
-	}
-	
-	.content-prod img {
-		width: 50%;
-		margin-bottom: 10px;
-	}
-	
-	.content-prod p {
-		margin-top: 10px;
-		padding: 10px;
-		font-size: 12px;
-	}
-	
-	.content-pre {
-		font-size: 15px;
-		width: 100px;
-	}
-	
-	.content-quan {
-		width: 150px;
-	}
-	
-	.content-quan input {
-		width: 50px;
-		height: 30px;
-		border-radius: 5px;
-	}
-	
-	.content-quan #quantidade {
-		font-size: 17px;
-	}
-	
-	.content-total {
-		font-size: 15px;
-		width: 100px;
-	}
-
-	.container-quad {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		gap: 5px;
-	}
-	
-	.container-quad p:hover {
-		cursor: pointer;
-		text-decoration: underline;
-	}
-	
-	.content-quan {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 25px;
-		width: 150px;
-	}
-	
-	.content-quan input {
-		width: 20px;
-		height: 30px;
-		border-left: none;
-		border-right: none;
-	}
-}
-
-@media (max-width: 1120px) {
-	.icon {
-		display: flex;
-		gap: 30px;
-	}
-
-	.icon span {
-	  display: none;
-	}
-
-	.icon a {
-		font-size: 20px;
-	}
-}
-
-@media (max-width: 1140px) {
-	.container-tabela {
-		margin-left: 40px;
-	}
-
-	.container-pedido {
-		margin-left: 30px;
-	}
-
-	.tabela p {
-		font-size: 15px;
-	}
-	
-	.container-content {
-		margin-top: 10px;
-		margin-bottom: 30px;
-		width: 460px;
-		height: 150px;
-		border-radius: 10px;
-	}
-	
-	.content-prod {
-		width: 200px;
-	}
-	
-	.content-prod img {
-		width: 50%;
-		margin-bottom: 10px;
-	}
-	
-	.content-prod p {
-		margin-top: 10px;
-		padding: 10px;
-		font-size: 10px;
-	}
-	
-	.content-pre {
-		font-size: 14px;
-		width: 80px;
-	}
-	
-	.content-quan {
-		width: 110px;
-	}
-	
-	.content-quan input {
-		width: 50px;
-		height: 30px;
-		border-radius: 5px;
-	}
-	
-	.content-quan #quantidade {
-		font-size: 17px;
-	}
-	
-	.content-total {
-		font-size: 14px;
-		width: 70px;
-	}
-
-	.container-quad {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		gap: 5px;
-	}
-
-	.content-quan {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 25px;
-		width: 110px;
-	}
-
-	.container-quad p {
-		font-size: 12px;
-	}
-	
-	.content-quan input {
-		width: 20px;
-		height: 30px;
-		border-left: none;
-		border-right: none;
-	}
-}
-
 @media (max-width: 1020px) {
 	  #intro .product-screens .product-screen-3,
 	  #intro .product-screens .product-screen-4 {
@@ -1858,15 +1561,10 @@ ul{
     line-height: 36px;
   }
   
-
   #intro p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 20px;
-  }
-
-  .nav-menu a{
-    font-size: 8px;
   }
 }
 
@@ -1931,4 +1629,59 @@ ul{
   margin-top: 15px;
   width: 400px;
   }
+
+  .container-pedido {
+	width: 350px;
+	margin-left: 20px;
+}
+}
+
+@media (max-width: 767px) {
+  #intro .product-screens .product-screen-1 {
+    position: static;
+    padding-top: 30px;
+  }
+
+  #produto .product-screens .product-screen-1 {
+    position: static;
+    padding-top: 30px;
+  }
+
+  #servicos .product-screens .product-screen-1 {
+    position: static;
+    padding-top: 30px;
+  }
+
+  #intro .product-screens .product-screen-2,
+  #intro .product-screens .product-screen-3,
+  #intro .product-screens .product-screen-4 {
+    display: none;
+  }
+  #servicos .product-screens .product-screen-2,
+  #servicos .product-screens .product-screen-3,
+  #servicos .product-screens .product-screen-4{
+    display: none;
+  }
+
+  .produto {
+	padding: 15px;
+  	width: 90%;
+  }
+
+  .product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  }
+
+ .button-group {
+  margin-top: 15px;
+  width: 400px;
+  }
+
+  .container-pedido {
+	width: 350px;
+	margin-right: 20px;
+}
 }
