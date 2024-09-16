@@ -284,84 +284,6 @@ h1,h2,h3,h4,h5,h6{
   top: 100px;
 }
 
-.container{
-	display: inline;
-}
-
-#contact {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-#contact .contact-about h3 {
-  font-size: 36px;
-  margin: 0 0 10px 0;
-  padding: 0;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color:  #0156a5;
-}
-
-#contact .contact-about p {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Montserrat", sans-serif;
-  color: #888;
-}
-
-#contact .social-links {
-  padding-bottom: 35px;
-}
-
-#contact .social-links a {
-  font-size: 20px;
-  display: inline-block;
-  color:  #0156a5;
-  line-height: 1;
-  padding: 4px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  transition: 0.3s;
-  color:  #0156a5;
-}
-
-#contact .social-links a:hover {
-  background:  #0156a5;
-  color: #fff;
-}
-
-#contact .info {
-  color: #333333;
-}
-
-#contact .info i {
-  font-size: 40px;
-  color:  #0156a5;
-  float: left;
-  line-height: 1;
-}
-
-#contact .info p {
-  padding: 5px 5px 10px 45px;
-  line-height: 28px;
-  font-size: 14px;
-}
-
-#contact img {
-  float: 10px ;
-  padding-right: 5px;
-  padding-left: 5px;
-  line-height: 28px;
-  font-size: 14px;
-}
-
 .message {
 	position: fixed;
 	bottom: 20px;
@@ -431,47 +353,6 @@ h1,h2,h3,h4,h5,h6{
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
   color: #888;
-}
-
-#sobre .social-links {
-  padding-bottom: 35px;
-}
-
-#sobre .social-links a {
-  font-size: 20px;
-  display: inline-block;
-  color:  #0156a5;
-  line-height: 1;
-  padding: 4px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  transition: 0.3s;
-  color:  #0156a5;
-}
-
-#sobre .social-links a:hover {
-  background:  #0156a5;
-  color: #fff;
-}
-
-#sobre .info {
-  color: #333333;
-}
-
-#sobre .info i {
-  font-size: 40px;
-  color:  #0156a5;
-  float: left;
-  line-height: 1;
-}
-
-#sobre .info p {
-  padding: 5px 5px 10px 45px;
-  line-height: 28px;
-  font-size: 14px;
 }
 
 #sobre img {
@@ -1164,23 +1045,11 @@ ul{
 	padding: 10px 1px 10px 1px;
 }
 
-#pag-46p {
-	margin-left: -3px;
-	width: 46px;
-	padding: 5px 6px 5px 7px;
-}
-
 #pag-51px {
 	width: 51px;
 	padding: 1px 5px 1px 5px;
 }
 
-#pag-55px {
-	width: 55px;
-	padding: 12px 5px 13px 4px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
 
 #cupom-message {
 	padding: 2px;
