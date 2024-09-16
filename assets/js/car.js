@@ -129,10 +129,6 @@ var url = `https://viacep.com.br/ws/${cep}/json/`;
                       var totalValue = parseFloat(total.innerText.replace('R$', '').replace(',', '.'));
                       var newTotal = totalValue + 20.44;
                         total.innerText = 'R$' + newTotal.toFixed(2).replace('.', ',');
-                      var desconto = newTotal * 0.1;
-                      var totalComDesconto = newTotal - desconto;
-                        document.getElementById('price-descont').innerText = 'R$' + totalComDesconto.toFixed(2).replace('.', ',');
-
                       var pricElement = document.getElementById('pric');
                       var pricValue = parseFloat(pricElement.innerText.replace('R$', '').replace(',', '.'));
                       var newPricValue = pricValue + 20.44;

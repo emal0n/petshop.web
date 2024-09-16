@@ -369,13 +369,12 @@ h1,h2,h3,h4,h5,h6{
 	background-color: #074bb1;
 	color: #fff;
 	padding: 10px;
-	border-radius: 14px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 300px;
+	width: 100px;
 	height: 50px;
-	font-size: 20px;
+	font-size: 10px;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -396,7 +395,19 @@ h1,h2,h3,h4,h5,h6{
 #sale {
 	padding: 50px 0;
 	overflow: hidden;
-	height: 1000px;
+	height: 1200px;
+}
+
+#salea {
+	padding: 50px 0;
+	overflow: hidden;
+	height: 150px;
+}
+
+#salec {
+	padding: 50px 0;
+	overflow: hidden;
+	height: 550px;
 }
 
 #salei{
@@ -907,6 +918,8 @@ ul{
     align-items: center;
     justify-content: space-between;
 	background-color: white;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .content-pre-total p {
@@ -919,8 +932,6 @@ ul{
 .content-desconto {
 	border: white;
 	border-top: none;
-	border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     gap: 5px;
 	background-color: white;
 }
@@ -1013,7 +1024,13 @@ ul{
 	height: 40px;
     padding: 5px;
    	border: none;
-    border-radius: 5px;
+}
+
+#pay {
+	width: 293px;
+	height: 40px;
+    padding: 5px;
+   	border: none;
 }
 
 .content-frete {
@@ -1108,7 +1125,7 @@ ul{
 .content-pag2 {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-	border-left: none;;
+	border-left: none;
 }
 
 .content-pag2 img {
@@ -1204,7 +1221,6 @@ ul{
 	height: 40px;
     padding: 5px;
 	border: none;
-    border-radius: 5px;
 	margin-top: 10px;
 }
 
@@ -1212,7 +1228,7 @@ ul{
 	width: 80px;
 	height: 39px;
 	font-size: 14px;
-	background-color: #0156a5;;
+	background-color: #0156a5;
 	color: white;
 	border: none;
     border-radius: 5px;

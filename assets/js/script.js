@@ -16,11 +16,11 @@ function addToCart(event){
   
   if (existingProductIndex !== -1){
     cart[existingProductIndex].quantity += 1;
-    showMessage('Adicionado ao carrinho!');
+    showMessage('Adicionado');
   } else {
     productData.quantity = 1;
     cart.push(productData);
-    showMessage('Adicionado ao carrinho!');
+    showMessage('Adicionado');
   }
 
   localStorage.setItem('cart', JSON.stringify(cart));

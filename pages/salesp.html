@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>PetShop PetCenter: Carrinho</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../assets/raw/icons/iconp.png" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"rel="stylesheet"/>
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/resposivity.css" rel="stylesheet" />
+  </head>
+<body>
+  <center>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <h1>
+            <a href="../index.html"><img src="../assets/raw/icons/logo.png"/></a>
+          </h1>
+        </div>
+        <div id="car">
+          <h1>
+            <a href=""><img src="../assets/raw/icons/car.png"/></a>
+          </h1>
+        </div>            
+      </div>
+    </header>
+  <main>
+    <section id= "salei">
+    <div class="container-tabela">
+        <div class="carrinho">
+            <ul id="cart">
+
+            </ul>
+        </div>
+    </div>
+  </section>
+    <section id="sale">
+        <div class="container-formas-pag">
+            <div class="formas-pag">
+                <div class="content-pag">
+                    <img id="pag-52px" src="../assets/raw/icons/pag-1.webp">
+                    <img id="pag-46px" src="../assets/raw/icons/pag-2.webp">
+                    <img id="pag-46px" src="../assets/raw/icons/pag-3.webp">
+                    <img id="pag-49px" src="../assets/raw/icons/pag-5.webp">
+                </div>
+                <div class="content-pag2">
+                    <img id="pag-46px" src="../assets/raw/icons/pag-7.webp">
+                    <img id="pag-51px" src="../assets/raw/icons/pag-8.webp">
+                    <img id="pag-54px" src="../assets/raw/icons/pag-4.webp">
+                </div>
+            </div>
+        </div>
+        <div class="container-pedido"></div>
+            <div class="container-cep">
+                    <h1 id="name-consulta">Pagamento</h1>
+                    <div class="content-cep">
+                        <div class="pesquisa">
+                            <input type="text" id="pay" placeholder=" Nome do proprietario">
+                                <input type="text" id="pay" placeholder=" Numero do cartao">
+                                <input type="text" id="pay" placeholder=" CVV">
+                            </div>
+                    </div>
+            </div>
+        <div class="container-pedido">
+            <div class="container-cep">
+                    <h1 id="name-consulta">Entrega</h1>
+                    <div class="content-cep">
+                        <div class="pesquisa">
+                            <input type="text" id="cep" placeholder="Digite seu CEP">
+                            <label class="form-pesquisa" for="cep"></label>
+                        </div>
+                        <button onclick="buscarEndereco()">Calcular</button>
+                    </div>
+                    <div class="frete">
+                            <div id="endereco"></div>
+                            <div class="content-frete">
+                                <div id="economico"></div>
+                                <div id="expresso"></div>
+                            </div>
+                    </div>
+            </div>
+
+            <div class="cupom-container">
+                <h1 id="name-consulta">Cupom</h1>
+                <div class="content-cep">
+                    <input type="text" id="cupom-input"  placeholder="Digite seu cupom">
+                    <button onclick="aplicarCupom()">Aplicar</button>
+                </div>
+                <div id="cupom-message"></div>
+                <div id="cupom-message2"></div>
+            </div>     
+            </div> <br>
+            <div class="pedido">
+                <p id="resumo">Resumo do pedido</p>
+            </div>
+            <article>
+                <div class="content-pedido">
+                    <div class="content-subtotal">
+                        <p>Subtotal</p>
+                        <p id="sub-total-preco">R$0,00</p>
+                    </div>
+                    <div class="content-entrega">
+                        <p>Entrega</p>
+                        <p id="valor-entrega">R$0,00</p>
+                    </div>
+                    <div class="content-desconto">
+                        <div class="box-des">
+                            <p>Desconto</p>
+                            <p id="price-descont">R$0,00</p>
+                        </div>
+                    </div>
+                    <div id="cupom"></div>
+                    <div class="content-pre-total">
+                        <p>Total</p>
+                        <p id="total-preco">R$0,00</p>
+                    </div>
+            <div class="content-comprar">
+              <a href="fsale.html"><button id="fechar-ped">Concluir compra</button></a>
+          </div>
+            </div>
+        </article>
+        
+        </div>
+
+        <div class="container-carrinho-vazio">
+          <div class="carrinho-vazio">
+              <img id="cart-imagem" src="../assets/raw/icons/idk.png" alt="cartpng">
+              <p id="cart-name-vazio">Opss... Seu carrinho está vazio</p>
+              Aproveite para adicionar produtos!
+              <a href="../index.html"><button id="cart-explorando">Explorar</button></a>
+          </div>
+        </div>
+</section>
+<section id="servicos">  
+<div class="intro-text">
+  <h2> Clique no banner </h2>
+  <p>
+    Confira nossos serviços :D
+  </p>
+</div>
+<div class="product-screens">
+  <div class="product-screen-1">
+    <a href="agen.html"><img src="../assets/raw/banners/b5.png" width="300"/></a>
+  </div>
+
+  <div class="product-screen-2">
+    <a href="agen.html"><img src="../assets/raw/banners/b6.png" width="300"/></a>
+  </div>
+  
+  <div class="product-screen-3">
+    <img src="../assets/raw/banners/s.png" width="500"/>
+  </div>
+
+  <div class="product-screen-4">
+    <img src="../assets/raw/banners/salsicha.png" width="800"/>
+  </div>
+</div>
+</section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+            <div class="copyright">
+              &copy; 2024 <strong><a class="footer-links"href="https://github.com/emal0n">emal0npetcenter</a></strong>. Todos os direitos reservados
+            </div>
+          </div>
+            <nav class="footer-links">
+              <a href="">Politicas de privacidade</a> 
+              <a href="">Termos de uso</a> <br>
+              <a href="../index.html">Inicio</a>
+              <a href="pages/about.html">Sobre a PetCenter</a>
+              <a href="pages/feedback.html">Feedback</a>
+              <a href="pages/blog.html">Blog</a> <br>
+            <a href="https://www.google.com"> <img src="assets/raw/icons/google.png" width="10"></a>
+            <a href="https://www.google.com"> <img src="assets/raw/icons/instagram.png" width="10"></a>
+            <a href="https://www.google.com"> <img src="assets/raw/icons/telephone-call.png" width="10"></a>
+            </div>
+          </div>
+           </nav>
+          <script src="../assets/js/car.js"></script>
+      </div>
+    </div>
+  </div>
+</center>
+</footer>
+</body>
+</html>
