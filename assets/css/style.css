@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: rgb(247, 228, 203);
+  background-color: antiquewhite;
   color: #343a40;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #logo {
-  width: 50px;
+  width: 1px;
 }
 
 #header {
@@ -55,11 +55,6 @@ h1,h2,h3,h4,h5,h6{
   text-transform: uppercase;
 }
 
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
-}
-
 #header #logo img {
   padding: 0;
   margin: 0;
@@ -86,16 +81,10 @@ h1,h2,h3,h4,h5,h6{
   text-transform: uppercase;
 }
 
-#header #car h1 a,
-#header #car h1 a:hover {
-  background: rgb(247, 228, 203);
-}
-
 #header #car img {
   padding: 0;
   margin: 0;
   top: 16px;
-  width:253px;
   height: 40px;
   position: static;
 }
