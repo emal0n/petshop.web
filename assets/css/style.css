@@ -329,19 +329,13 @@ h1,h2,h3,h4,h5,h6{
 #sale {
 	padding: 50px 0;
 	overflow: hidden;
-	height: 1200px;
+	height: 700px;
 }
 
 #salea {
 	padding: 50px 0;
 	overflow: hidden;
-	height: 150px;
-}
-
-#salec {
-	padding: 50px 0;
-	overflow: hidden;
-	height: 550px;
+	height: 1200px;
 }
 
 #salei{
@@ -712,7 +706,6 @@ ul{
 .container-tabela {
 	display: block;
     margin-top: 80px;
-	margin-left: 40px;
 }
 
 .container-content {

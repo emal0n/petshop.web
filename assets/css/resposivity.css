@@ -45,7 +45,37 @@
 
 @media (max-width: 1630px) {
 	.container-tabela {
-		margin-left: 40px;
+		margin-left: 20px;
+	}
+
+	.produto {
+		padding: 15px;
+		  width: 90%;
+	  }
+	
+	  .product-price {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  width: 800px;
+	  }
+	
+	 .button-group {
+	  margin-top: 15px;
+	  width: 500px;
+	  }
+
+	  #itemName{
+		width: 10%;
+		text-align: justify;
+		margin-right: 100px;
+		margin-top: 25px;
+		font-size: 15px;
+	}
+
+	#itemPrice {
+		margin-top: 30px;
+		font-size: 20px;
 	}
 	
 	.pedido {
@@ -325,6 +355,77 @@
 	  }
 }
 
+@media (max-width: 767px) {
+  #intro .product-screens .product-screen-1 {
+    position: static;
+    padding-top: 30px;
+  }
+
+  #produto .product-screens .product-screen-1 {
+    position: static;
+    padding-top: 30px;
+  }
+
+  #servicos .product-screens .product-screen-1 {
+    position: static;
+    padding-top: 30px;
+  }
+
+  #intro .product-screens .product-screen-2,
+  #intro .product-screens .product-screen-3,
+  #intro .product-screens .product-screen-4 {
+    display: none;
+  }
+  #servicos .product-screens .product-screen-2,
+  #servicos .product-screens .product-screen-3,
+  #servicos .product-screens .product-screen-4{
+    display: none;
+  }
+
+  .produto {
+	padding: 15px;
+  	width: 90%;
+  }
+
+  ul {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: center;
+  }
+
+  .product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  }
+
+ .button-group {
+  margin-top: 15px;
+  width: 400px;
+  }
+
+  .container-pedido {
+	width: 350px;
+	margin-left: 20px;
+}
+.container-tabela {
+	margin-left: 40px;
+}
+#itemName{
+	width: 10%;
+	text-align: justify;
+	margin-right: 100px;
+	margin-top: 25px;
+	font-size: 10px;
+}
+#itemPrice {
+	margin-top: 30px;
+	font-size: 15px;
+}
+}
+
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 28px;
@@ -423,6 +524,20 @@
   .container-pedido {
 	width: 350px;
 	margin-left: 20px;
+}
+.container-tabela {
+	margin-left: 40px;
+}
+#itemName{
+	width: 10%;
+	text-align: justify;
+	margin-right: 100px;
+	margin-top: 25px;
+	font-size: 10px;
+}
+#itemPrice {
+	margin-top: 30px;
+	font-size: 15px;
 }
 }
 
