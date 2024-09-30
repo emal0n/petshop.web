@@ -287,8 +287,8 @@ h1,h2,h3,h4,h5,h6{
 
 .message {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 135px;
+	right: 135px;
 	background-color: #074bb1;
 	color: #fff;
 	padding: 10px;
