@@ -41,6 +41,304 @@
 	  left: calc(85% - 154px);
 	  bottom: 0;
 	}
+
+	.container-tabela {
+		margin-left: 20px;
+	}
+
+	.produto {
+		padding: 15px;
+		  width: 90%;
+	  }
+	
+	  .product-price {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  width: 800px;
+	  }
+	
+	 .button-group {
+	  margin-top: 15px;
+	  width: 500px;
+	  }
+
+	  #itemName{
+		width: 10%;
+		text-align: justify;
+		margin-right: 100px;
+		margin-top: 25px;
+		font-size: 15px;
+	}
+
+	#itemPrice {
+		margin-top: 30px;
+		font-size: 20px;
+	}
+	
+	.pedido {
+		width: 350px;
+		height: 70px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	
+	.pedido p {
+		font-size: 24px;
+	}
+	
+	.content-subtotal {
+		width: 350px;
+		height: 50px;
+	}
+	
+	.content-subtotal p {
+		font-size: 18px;
+		margin-left: 15px;
+		padding-right: 10px;
+	}
+	
+	.content-entrega {
+		width: 350px;
+		height: 50px;
+	}
+	
+	.content-entrega p {
+		font-size: 18px;
+		margin-left: 15px;
+		padding-right: 10px;
+	}
+	
+	.content-pre-total {
+		width: 350px;
+		height: 60px;
+	}
+	
+	.content-pre-total p {
+		font-size: 23px;
+		margin-left: 15px;
+		padding-right: 10px;
+	}
+	
+	.content-desconto {
+		gap: 5px;
+	}
+	
+	.content-desconto #price-descont {
+		font-size: 23px;
+		margin-right: 20px;
+	}
+	
+	.content-desconto #pric {
+		margin-top: 24px;
+		font-size: 16px;
+	}
+	
+	.content-desconto p {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+	
+	.content-pedido p {
+		margin-right: 10px;
+	}
+	
+	.content-comprar {
+		margin-top: 30px;
+		width: 350px;
+		gap: 10px;
+	}
+	
+	.content-comprar button {
+		width: 170px;
+		height: 40px;
+		font-size: 14px;
+		border-radius: 5px;
+	}
+	
+	.content-comprar #fechar-ped {
+		width: 170px;
+	}
+	
+	.container-cep {
+		width: 350px;
+		margin-top: 20px;
+	}
+	
+	.container-cep h1 {
+		font-size: 26px;
+		margin-bottom: 15px;
+	}
+	
+	.content-cep {
+		gap: 10px;
+	}
+	
+	.content-cep input {
+		font-size: 14px;
+	}
+	
+	.content-cep button {
+		width: 70px;
+		height: 39px;
+		font-size: 14px;
+		border-radius: 5px;
+	}
+
+	.container-formas-pag {
+		width: 350px;
+		margin-top: 20px;
+	}
+	
+	.container-formas-pag h2 {
+		display: flex;
+		justify-content: start;
+		margin-bottom: 0px;
+		font-size: 15px;
+	}
+	
+	.formas-pag {
+		flex-direction: column;
+		width: 350px;
+		margin-top: 10px;
+	}
+	
+	.content-pag, .content-pag2 {
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0px;
+		width: 100%;
+		height: 55px;
+		border: 1px solid #b6b6b6;
+		border-radius: none;
+		box-shadow: none;
+		cursor: pointer;
+	}
+	
+	.content-pag {
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 0;
+		border-bottom: none;
+	}
+	
+	.content-pag img {
+		width: 43px;
+	}
+	
+	.content-pag2 {
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 0;
+		border-top: none;
+	}
+	
+	.content-pag2 img {
+		width: 43px;
+	}
+	
+	#pag-52px {
+		width: 67px;
+		padding: 3px 10px 4px 10px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	#pag-46px {
+		width: 63px;
+		padding: 2px 6px 2px 7px;
+	}
+	
+	#pag-46px {
+		width: 62px;
+		padding: 2px 6px 3px 7px;
+	}
+	
+	#pag-54px {
+		width: 63px;
+		padding: 3px 8px 4px 8px;
+	}
+	
+	#pag-49px {
+		width: 93px;
+		padding: 7px 5px 7px 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 0px;	
+	}
+	
+	#pag-46px {
+		width: 67px;
+		padding: 3px 10px 4px 10px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 5px;
+		margin-left: 0px;
+	}
+	
+	#pag-46px {
+		width: 63px;
+		padding: 2px 6px 2px 7px;
+	}
+	
+	#pag-51px {
+		width: 62px;
+		padding: 2px 6px 3px 7px;
+	}
+	
+	#pag-51px {
+		width: 63px;
+		padding: 3px 8px 4px 8px;
+	}
+	
+	#pag-55 {
+		width: 93px;
+		padding: 12px 5px 12px 5px;	
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 5px;
+	}
+
+	.content-frete {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+	}
+	
+	#end {
+		width: 350px;
+		height: 40px;
+		padding: 5px;
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	
+	#economico, #expresso {
+		margin-top: 10px;
+		margin-bottom: 15px;
+		line-height: 1.4;
+	}
+	
+	#eco {
+		width: 170px;
+		height: 70px;
+		padding: 10px 10px 10px;
+		border-radius: 10px;
+		font-size: 12px;
+	}
+	
+	#eco:hover {
+		transform: scale(1.006);
+		box-shadow: 3px 3px 8px #afafaf;
+		background-color: #f1f1f1;
+	}
+	
+	.cor-frete {
+		color: rgb(55, 55, 228);
+	}
+
+	.cupom-container {
+		width: 350px;
+	}
 }
 
 @media (max-width: 1630px) {
