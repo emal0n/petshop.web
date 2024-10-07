@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6{
   position: fixed;
   left: 0;
   top: 0;
-  right: 0;
+	right: 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -43,42 +43,16 @@ h1,h2,h3,h4,h5,h6{
   float: left;
 }
 
-#header #logo h1 {
-  font-size: 36px;
-  margin: -4px 0 0 0;
-  padding: 0;
-  line-height: 1;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
 #header #logo img {
   padding: 0;
   margin: 0;
   top: 16px;
   width:240px;
-  height: 40px;
-  position: absolute;
+  position: static;
 }
-
 
 #header #car {
   float: right;
-}
-
-#header #car h1 {
-  font-size: 36px;
-  margin: -4px 0 0 0;
-  padding: 0;
-  line-height: 1;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 #header #car img {
