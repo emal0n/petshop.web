@@ -11,7 +11,7 @@
 ## Instalação e Configuração ⚙️
 
 1. Clone este repositório: `git clone https://github.com/emal0n/petshop.web.git`
-2. Instale o VSCODE e a depẽndencia LiveServer
+2. Instale o VSCODE e a depêndencia LiveServer
 4. Inicie o projeto clicando no botão `Go Live`
 5. Acesse o sistema no seu navegador: `http://localhost:3000`
 
